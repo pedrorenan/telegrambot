@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>plg_content_telegrambot</name>
+	<author>Pedro Renan</author>
+	<creationDate>Janeiro 2017</creationDate>
+	<copyright>Copyleft</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>pedro@renan.email</authorEmail>
+	<authorUrl>http://pedrorenan.blog</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_TELEGRAMBOT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="telegrambot">telegrambot.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_telegrambot.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_telegrambot.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_content_telegrambot.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_content_telegrambot.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="tag"
+					type="tag"
+					label="PLG_CONTENT_TELEGRAMBOT_TAG_LABEL"
+					description="PLG_CONTENT_TELEGRAMBOT_BOT_TOKEN_DESC"
+					mode="ajax"
+					class="inputbox span12 small"
+					multiple="false"
+				/>
+				<field
+					name="token"
+					type="text"
+					label="PLG_CONTENT_TELEGRAMBOT_BOT_TOKEN_LABEL"
+					description="PLG_CONTENT_TELEGRAMBOT_BOT_TOKEN_DESC"
+					default=""
+					/>
+				<field
+					name="channel"
+					type="text"
+					label="PLG_CONTENT_TELEGRAMBOT_CHANNEL_LABEL"
+					description="PLG_CONTENT_TELEGRAMBOT_CHANNEL_DESC"
+					default=""
+					/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
